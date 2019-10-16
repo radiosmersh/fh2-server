@@ -3,5 +3,5 @@ WORKDIR /app
 ADD . /app
 VOLUME /app/mods/fh2
 VOLUME /app/admin
-RUN python /app/admin/ad_framework/construct_maplist.py
+RUN python /app/admin/ad_framework/ad_construct_maplist.py
 ENTRYPOINT ["./start-fh2.sh"]
